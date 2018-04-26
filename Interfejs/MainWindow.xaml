@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interfejs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="300" MinWidth="600">
     <Grid>
-        
+        <Grid Height="35" VerticalAlignment="Top" HorizontalAlignment="Right" >
+            <ComboBox MinWidth="100" HorizontalAlignment="Right" Margin="10,0,10,0" Padding="5,5">
+                <ComboBoxItem Content="Page 1" Padding="5,5" Selected="p1Selected"/>
+                <ComboBoxItem Content="Page 2" Padding="5,5" Selected="p2Selected"/>
+                <ComboBoxItem Content="Page 3" Padding="5,5" Selected="p3Selected"/>
+            </ComboBox>
+
+
+        </Grid>
+        <Frame x:Name="Main" Margin="0,35,0,0" NavigationUIVisibility="Hidden" SizeChanged="Main_SizeChanged"/>
+
+
+
     </Grid>
 </Window>
